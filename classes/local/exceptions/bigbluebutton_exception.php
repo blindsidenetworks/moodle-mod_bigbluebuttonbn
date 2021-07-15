@@ -15,19 +15,27 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Internal library of functions for module BigBlueButtonBN.
+ * The mod_bigbluebuttonbn generic exception.
  *
  * @package   mod_bigbluebuttonbn
  * @copyright 2010 onwards, Blindside Networks Inc
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @author    Jesus Federico  (jesus [at] blindsidenetworks [dt] com)
- * @author    Fred Dixon  (ffdixon [at] blindsidenetworks [dt] com)
+ * @author    Laurent David  (laurent [at] call-learning [dt] fr)
  */
 
-use mod_bigbluebuttonbn\local\bigbluebutton;
-use mod_bigbluebuttonbn\local\helpers\files;
-use mod_bigbluebuttonbn\plugin;
+namespace mod_bigbluebuttonbn\local\exceptions;
 
-defined('MOODLE_INTERNAL') || die;
 
-global $CFG;
+defined('MOODLE_INTERNAL') || die();
+
+/**
+ * Class bigbluebutton_exception
+ *
+ * @package   mod_bigbluebuttonbn
+ * @copyright 2010 onwards, Blindside Networks Inc
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @author    Laurent David  (laurent [at] call-learning [dt] fr)
+ */
+class bigbluebutton_exception extends \moodle_exception {
+
+}
